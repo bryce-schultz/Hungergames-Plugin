@@ -21,6 +21,16 @@
 `/hg admin <playername>` - *gives the player access to developer/admin commands.*
 <br>
 `/hg start <arena>` - *a dev command that is used to force start a specific arena/game.*
+<br>
+`/hg join <arena>` - *joins the specified arena.*
+<br>
+`/hg leave` - *leaves the current game.*
+<br>
+`/hg invite <player>` - *invites the specified player to the game you are in*
+<br>
+`/hg setpos <arena> <number>` - *a admin command that sets a possible spawing position where the player is to the specified arena.*
+<br>
+`/hg setloc <number: 1-2>` - *a dev command that is used to set the bounds for adding chests.*
 
 
 ###Permissions
@@ -31,4 +41,23 @@
   <br>
   `hg.admin` - *gives the ability to kick players from the arena, and to start the arena, inherits hg.default*
 ####Per Command:
+
+| Command   | Permission | Parent            |
+|:-------:  |:----------:|:------:           |
+|`/hg help` |`hg.help`   |`hg.default` `hg.*`|
+|`/hg start`|`hg.start`  |`hg.admin` `hg.*`  |
+|`/hg join` |`hg.join`   |`hg.default` `hg.#`|
+
   `hg.help` - *gives access to* `/hg help`
+  <br>
+  `hg.start` - *gives access to* `/hg start <arena>`
+  <br>
+  `hg.join` - *gives access to* `/hg join <arena>`
+  <br>
+  `hg.leave` - *gives access to* `/hg leave`
+  <br>
+  `hg.setpos` - *gives access to* `/hg setpos <arena> <number>`
+  <br>
+  `hg.setloc` - *gives access to* `/hg setloc <number: 1-2>`
+  <br>
+  `hg.invite` - *gives access to* `/hg invite <player>`
