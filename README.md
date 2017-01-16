@@ -11,6 +11,6 @@ from looking at the code. If for example you are buliding your own but you
 don't know how you are going to add and manage the games chests you can
 find how in my code!
 
-Visit the Instructions [here](https://www.google.com)
+Visit the Instructions [here](https://github.com/bryce-schultz/Hungergames-Plugin/blob/master/Instructions.md)
 
 -Enjoy
