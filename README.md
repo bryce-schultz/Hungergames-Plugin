@@ -11,4 +11,6 @@ from looking at the code. If for example you are buliding your own but you
 don't know how you are going to add and manage the games chests you can
 find how in my code!
 
+Visit the Instructions [here](https://www.google.com)
+
 -Enjoy
